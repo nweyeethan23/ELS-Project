@@ -1,0 +1,358 @@
+ /* start for home page */
+.carousel-caption .title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.home-carousel .carousel-caption .text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+ /* Custom CSS for carousel height */
+.home-carousel .carousel {
+  height: 120vh;
+}
+.home-carousel .carousel-inner {
+  height: 100%; 
+}
+.home-carousel .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.home-carousel .carousel-caption {
+    position: absolute;
+    bottom: 600px;
+    right: 1000px;
+    color: white;
+}
+ /* Define the fade-in animation */
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+    transform: translateY(200px); /* Start from below */
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+    }
+}
+
+/* Apply animation to carousel captions */
+.home-carousel .carousel-caption,
+.sec-row-img {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(10px); /* Initially slightly below */
+}
+
+/* Make sure the caption is visible when active */
+.home-carousel .carousel-item.active .carousel-caption,
+.sec-row-img {
+    opacity: 1;
+    transform: translateY(0); /* Reset to normal position */
+}
+
+.sec-row{
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+.sec-row img{
+  /* margin-top: -2rem; */
+  vertical-align: middle;
+  border-radius: 50px;
+}
+
+.sec-text {
+  padding: 100px;
+}
+.sec-container{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+
+}
+.third-row .text-body{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-top:-20px;
+  background: white;
+  width: 90%;
+  height: 70%;
+}
+.third-row img{
+  border-radius: 15px;
+}
+.text-body{
+  position: absolute;
+}
+.row-4{
+  margin-top: 300px;
+  
+}
+.box {
+
+    transition: filter 0.3s ease;
+}
+.box:hover {
+        filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+}
+.about-section{
+  background-image: url(/image/bg-location-info.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 50%;
+  position: relative;
+  z-index: 11;
+}
+.choosing-section{
+background: RGB(255, 244, 215);
+}
+
+.choosing-section .nav-pills-wrapper {
+border-radius: 50px;
+background: #fff;
+box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .16);
+padding-left: 2%;
+padding-right: 2%;
+overflow: hidden;
+position: relative;
+z-index: 2;
+}
+.choosing-section .nav-pills .nav-link {
+color: #9b9b9b;
+padding-top: 2rem;
+padding-bottom: 2rem;
+font-family: var(--font-bebas);
+letter-spacing: .8px;
+position: relative;
+background-color: transparent;
+height: 100%;
+width: 100%;
+}
+.choosing-section .nav-pills .nav-link:after {
+content: "";
+border-radius: 20px 20px 0 0;
+background: green;
+position: absolute;
+height: 0;
+transition: .2s all;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+.choosing-section .nav-pills .nav-link.active {
+color:black;
+font-weight: bold;
+}
+.choosing-section .nav-pills .nav-link.active:after{
+height: 11px;
+color:black;
+}
+.tab-content .tab-pane .icon {
+background-color: orange;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+width: 125px;
+height: 125px;
+margin-left: -8%;
+left: 0;
+top: calc(8% + 4rem);
+position: absolute;
+}
+.tab-content .tab-pane .text-group {
+position: relative;
+height: 100%;
+background-color: #fff;
+padding: calc(8% + 4rem) 8% calc(8% + 4rem) calc(8% + 62.5px);
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.tab-content .tab-pane {
+margin-top: -4rem;
+}
+
+.achievements-section{
+content: "";
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url(/image/about_page.svg);
+background-position: center;
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+background-color: RGB(255, 255, 255);
+background-size: 100%;
+}
+.achievements-container,
+.join-section{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+
+}
+.join-section{
+  background-color: RGB(255, 255, 255);
+}
+
+.join-section .join-container img{
+border-radius: 50%;
+border: 5px solid lightgray;
+}
+.join-section .join-container .text-body-container::before{
+content: url(/image/open.svg);
+display: block;
+}
+.join-section .join-container .text-body-container::after{
+content: url(/image/close.svg);
+display: block;
+text-align: right;
+}
+ /* end for home page */
+ /* about page */
+ .sec-container,
+.purpose-section{
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 100px;
+
+    }
+.purpose-container{
+    background: white;
+    border:1px solid lightgray;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius:50px;
+    padding: 8rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.purpose-section{
+    background-image: url(/image/bg-location-info.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 50%;
+    padding-bottom: 3rem;
+    position: relative;
+    z-index: 11;
+}
+.about-section-about{
+    background-image: url(/image/about_page.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index: 11;
+}
+.history-section .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: orange;
+    background-color: rgba(255, 255, 255, 0) !important;;
+}
+.history-section .nav-link {
+    color: #B4B4B4;
+    background-color: rgba(255, 255, 255, 0) !important;;
+}
+.ministry-section{
+    background-color: RGB(255, 244, 215);
+}
+.history-section,
+.ministry-section,
+.swiper-section{
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+    }
+.swiper-section .wrapper {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, .1);
+    padding: 3rem 3rem;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+.swiper-section .swiper-slide:nth-child(1) .wrapper:before {
+    background-color: RGB(255, 199, 42);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+}
+.swiper-section .swiper-slide:nth-child(1) .wrapper:before,
+.swiper-section .swiper-slide:nth-child(4) .wrapper:before {
+    background-color: RGB(255, 199, 42);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+}
+.swiper-section .swiper-slide:nth-child(2) .wrapper:before,
+.swiper-section .swiper-slide:nth-child(5) .wrapper:before {
+    background-color: RGB(74, 173, 77);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+}
+.swiper-section .swiper-slide:nth-child(3) .wrapper:before,
+.swiper-section .swiper-slide:nth-child(6) .wrapper:before {
+    background-color: RGB(245, 130, 32);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+}
+
+ /* course page */
+ .course {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .course-image img {
+    width: 300px;
+    height: 330px;
+    object-fit: cover;
+  }
+  .course-info {
+    margin-left: 20px;
+  }
+  .course-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .course-info p {
+    margin: 5px 0;
+  }
+  .couse-section{
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 100px;
+
+  }
